@@ -44,4 +44,9 @@ class Request
     {
         return $_SERVER["REQUEST_METHOD"] ?? null;
     }
+
+    public function uri(): string
+    {
+        return $_SERVER["REQUEST_URI"] ?? "";
+    }
 }
